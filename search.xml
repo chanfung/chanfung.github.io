@@ -3,6 +3,17 @@
   <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2017%2F04%2F30%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post"; More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[hasOwnProperty和in属性操作]]></title>
+    <url>%2F2016%2F04%2F30%2FhasOwnProperty%E5%92%8Cin%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[hasOwnProperty和in属性操作in关键字作用：用来检查对象中是否存在某个属性(不区分实例属性和原型属性)语法：“属性名” in 对象 代码示例:12345678910111213141516171819//01 提供一个构造函数function Person(name) &#123; this.name = name;&#125;//02 设置构造函数的原型对象的属性Person.prototype.sayHello = function () &#123; console.log(&quot;hello&quot;);&#125;//03 创建对象var p1 = new Person();//04 使用in关键字判断对象中是否存在以下属性:name age sayHelloconsole.log(&quot;age&quot; in p1); //falseconsole.log(&quot;name&quot; in p1); //trueconsole.log(&quot;sayHello&quot; in p1); //true 对象的hasOwnProperty方法作用：用来检查对象中是否存在指定的属性(只检查实例属性)语法：对象.hasOwnProperty(“属性名”) 代码示例:123456789101112131415161718192021//01 提供一个构造函数 function Person(name) &#123; this.name = name; &#125; //02 设置构造函数的原型对象的属性 Person.prototype.sayHello = function () &#123; console.log(&quot;hello&quot;); &#125; Person.prototype.des = &quot;默认的描述信息&quot;; //03 创建对象 var p1 = new Person(); //04 使用hasOwnProperty方法判断该属性是否是对象的实例属性 console.log(p1.hasOwnProperty(&quot;age&quot;)); //false console.log(p1.hasOwnProperty(&quot;name&quot;)); //true console.log(p1.hasOwnProperty(&quot;sayHello&quot;)); //false console.log(p1.hasOwnProperty(&quot;des&quot;)); //false 判断某对象中存在且只存在某个原型属性123function isProperty(obj, property) &#123; return !obj.hasOwnProperty(property) &amp;&amp; (property in obj);&#125;]]></content>
+      <categories>
+        <category>javaScript</category>
+      </categories>
+      <tags>
+        <tag>面向对象</tag>
+      </tags>
   </entry>
 </search>
