@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2017%2F04%2F30%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post"; More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[hasOwnProperty和in属性操作]]></title>
-    <url>%2F2016%2F04%2F30%2FhasOwnProperty%E5%92%8Cin%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[in关键字 作用：用来检查对象中是否存在某个属性(不区分实例属性和原型属性)语法：“属性名” in 对象 代码示例:1234567891011121314151617//01 提供一个构造函数function Person(name) &#123; this.name = name;&#125;//02 设置构造函数的原型对象的属性Person.prototype.sayHello = function () &#123; console.log(&quot;hello&quot;);&#125;//03 创建对象var p1 = new Person();//04 使用in关键字判断对象中是否存在以下属性:name age sayHelloconsole.log(&quot;age&quot; in p1); //falseconsole.log(&quot;name&quot; in p1); //trueconsole.log(&quot;sayHello&quot; in p1); //true 对象的hasOwnProperty方法 作用：用来检查对象中是否存在指定的属性(只检查实例属性) 语法：对象.hasOwnProperty(“属性名”) 代码示例:123456789101112131415161718192021//01 提供一个构造函数 function Person(name) &#123; this.name = name; &#125; //02 设置构造函数的原型对象的属性 Person.prototype.sayHello = function () &#123; console.log(&quot;hello&quot;); &#125; Person.prototype.des = &quot;默认的描述信息&quot;; //03 创建对象 var p1 = new Person(); //04 使用hasOwnProperty方法判断该属性是否是对象的实例属性 console.log(p1.hasOwnProperty(&quot;age&quot;)); //false console.log(p1.hasOwnProperty(&quot;name&quot;)); //true console.log(p1.hasOwnProperty(&quot;sayHello&quot;)); //false console.log(p1.hasOwnProperty(&quot;des&quot;)); //false 判断某对象中存在且只存在某个原型属性123function isProperty(obj, property) &#123; return !obj.hasOwnProperty(property) &amp;&amp; (property in obj);&#125;]]></content>
-      <categories>
-        <category>javaScript</category>
-      </categories>
+    <title><![CDATA[新开博客写点东西！]]></title>
+    <url>%2F2016%2F03%2F06%2F%E6%96%B0%E5%BC%80%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95%E4%B8%8B%EF%BC%81%2F</url>
+    <content type="text"><![CDATA[平时浏览技术文章时，看到的文章经常都是写博客上，有一些写在自己花钱买的域名和空间搭建的博客而且也做得非常好看。之前一直都有这个想法，搭建一个属于自己的博客，如果在博客平台写的笔记有点寄人篱下感觉，所以，还是自己动手搭建一下。也趁着今天是周末，也没什么事情不用出门赶紧把这个事给了结。 之所以选择Hexo程序搭建博客，因为之前在别人博客看一下技术文章，当时的博客主题就我现在选择这个Next，这种风格我个人比较喜欢，比较简洁。另外也说下搭建博客原因，首先，主要是做了前端开发，那么这门技术发展、更新的很快，平时学到一些技术，包括一些好的文章，整理好写成笔记放到博客里，到时有些技术点时间长了也没怎么用到，到时再看会自己整理的一些文章、笔记，那么复习起来也比较容易。 暂时没什么东西放就先放张图片先！]]></content>
       <tags>
-        <tag>面向对象</tag>
+        <tag>记录</tag>
       </tags>
   </entry>
 </search>
